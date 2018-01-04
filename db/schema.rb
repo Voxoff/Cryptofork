@@ -32,4 +32,9 @@ ActiveRecord::Schema.define(version: 20171205214324) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table :coins do |t|
+    t.string :name
+    t.string :name
+    t.timestamps
+  end
 end
